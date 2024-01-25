@@ -1,45 +1,101 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+.main {
+
+  background-color: white;
+  color: #CC212A;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: x-large;
+  font-weight: bold;
 }
 
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.main h1 {
+  text-transform: uppercase;
 }
 
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.main h2 {
+  text-transform: capitalize;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+
+
+.footer {
+  position: fixed;
+  bottom: 10%;
+  z-index: 1;
+  width: 100%;
+}
+
+.footer__div--line {
+  border-top: 2px solid #CC212A;
+}
+
+.footer__div {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__div--date {
+  position: relative;
+  top: 40px;
+  font-size: small;
+}
+
+.footer__div--button {
+  background-color: #CC212A;
+  color: white;
+  padding: 13px 15px;
+  border-radius: 100%;
+  position: fixed;
+  bottom: 9.5%;
+  z-index: 1;
+}
+
+
+@media (min-width: 360px) {
+
+  .footer {
+    position: fixed;
+    bottom: 0%;
+    z-index: 1;
+    width: 100%;
   }
 
-  to {
-    transform: rotate(360deg);
+  .footer__div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 10px;
   }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 10s linear;
+  .footer__div--date {
+    position: relative;
+    top: 0px;
+    font-size: small;
   }
-}
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+  .footer__div--button {
+    padding: 9px 11px;
+    font-size: 13px;
+    background-color: #CC212A;
+    color: white;
+    padding: 9px 11px;
+    border-radius: 100%;
+    position: relative;
+    z-index: 1;
+  }
 }
