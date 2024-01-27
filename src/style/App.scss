@@ -1,1 +1,13 @@
-@import 'core/reset'
+@import 'core/reset';
+
+.dark {
+    background-color: black;
+    color: white;
+    height: 100vh;
+}
+
+.light {
+    background-color: white;
+    color: black;
+    height: 100vh;
+}
