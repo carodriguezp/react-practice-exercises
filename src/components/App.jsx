@@ -1,4 +1,5 @@
-import '../style/App.scss'
+import '../style/App.scss';
+// import { useState } from 'react';
 
 function App() {
   const user = "Carolina";
