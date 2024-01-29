@@ -1,1 +1,31 @@
-@import 'core/reset'
+@import 'core/reset';
+
+.header {
+
+
+    &-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .fa-bars {
+            color: blue;
+        }
+
+        .fa-heart {
+            color: red;
+        }
+
+        .fa-magnifying-glass {
+            color: orange;
+        }
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.shown {
+    background-color: aquamarine;
+}
