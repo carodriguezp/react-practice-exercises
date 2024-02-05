@@ -1,8 +1,14 @@
-# React + Vite
+# React Exercises
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains a selection of exercises solved using REACT. In addition, to make the repository lighter, each activity has been solved in a separate branch. 
 
-Currently, two official plugins are available:
+These exercises cover solutions related to:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* Events and State
+* Components and Props
+* Lifting State Up and Children
+* Arrays and Objects
+* Forms
+* Fetch and Local Storage
+* Router
+* Testing
