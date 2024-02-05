@@ -7,7 +7,7 @@ function App() {
   const [numberA, setNumberA] = useState(0);
   const [numberB, setNumberB] = useState(0);
   const [total, setTotal] = useState(0);
-  const [operation, setOperation] = useState("Suma");
+  const [operation, setOperation] = useState("Type");
 
   const handleNumberA = (ev) => {
     setNumberA(ev.target.value);
@@ -39,6 +39,14 @@ function App() {
       setTotal(parseInt(numberA) / parseInt(numberB));
 
     }
+
+  }
+
+  const handleReset = () => {
+    setNumberA(0);
+    setNumberB(0);
+    setTotal(0);
+    setOperation("Type");
   }
 
   return (
@@ -74,6 +82,7 @@ function App() {
           value={operation}
           onChange={handleOperation}
         >
+          <option value="Type">Tipo de operación</option>
           <option value="Suma">Suma</option>
           <option value="Resta">Resta</option>
           <option value="Multiplicación">Multiplicación</option>
@@ -84,6 +93,8 @@ function App() {
       <p>
         El resultado de la <strong>{operation}</strong> entre <strong>{numberA}</strong> y <strong>{numberB}</strong> es <strong> {total}</strong>.
       </p>
+
+      <button onClick={handleReset}>Reset</button>
     </div>
   );
 }
